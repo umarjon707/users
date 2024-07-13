@@ -9,14 +9,10 @@ const userForm = document.forms.namedItem('users_form');
 
 userForm.onsubmit = (e) => {
     e.preventDefault();
-
     const user = {
-        id: crypto.randomUUID(),
         name: new FormData(e.target).get('name'),
-        age: parseInt(new FormData(e.target).get('age'), 10),
-        year: new Date().toLocaleTimeString(),
+        age: Math.floor(new FormData(e.target).get('age'))
     };
-
     users.push(user);
     reload(users, addUser, under_twfi, under_fif, others);
 };
