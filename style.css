@@ -1,22 +1,19 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
+     box-sizing: border-box;
+} 
 .container {
     width: 80%;
     margin: 0 auto;
     padding-top: 20px;
 }
 
-.form-container {
+.for_container {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 30px;
     
 }
 
@@ -24,6 +21,8 @@ form input, form button {
     padding: 10px;
     margin: 5px;
     font-size: 16px;
+    border-radius: 12px;
+    border-color: #c4c4c4;
 }
 
 form button {
@@ -41,23 +40,42 @@ form button:hover {
 .columns {
     display: flex;
     justify-content: space-between;
-    div {
-        width: 300px;
-        height: 100px;
+    gap: 20px;
+   .box  {
+        width: 400px;
+        height: 200px;
     }
 }
 h3 {
     text-align: center;
+    font-size: 30px;
 }
 
 .box {
-    padding: 20px;
-    display: flex;
-    align-items: center;
+    padding: 50px;
     justify-content: space-between;
     font-family: "Roboto", sans-serif;
     font-size: 20px;
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
-    border-radius: 5px;
+    border-radius: 12px;
 } 
+.line{
+border-radius: 12px;
+padding: 5px;
+margin-top: 10px;
+display: flex;
+justify-content: space-between;
+height: 40px;
+width: 100%;
+background-color:  #dee2e6f5;
+}
+form{
+    margin-top: 50px;
+}
+.box-age{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 400px;
+}
