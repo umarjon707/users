@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -11,6 +17,7 @@ body {
 .form-container {
     text-align: center;
     margin-bottom: 20px;
+    
 }
 
 form input, form button {
@@ -24,6 +31,7 @@ form button {
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 12px;
 }
 
 form button:hover {
@@ -34,23 +42,22 @@ form button:hover {
     display: flex;
     justify-content: space-between;
     div {
-        width: 30%;
+        width: 300px;
+        height: 100px;
     }
 }
-
-
-
 h3 {
     text-align: center;
 }
 
-.person-card {
+.box {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
     border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+} 
